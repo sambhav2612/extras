@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Simple HTML5 + CSS3 + JS Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <h2 class="reset">Simple HTML5 + CSS3 + JS Calculator</h2>
+        <form name="calculator">
+            <table class="table table-dark table-bordered table-nonfluid center">
+                <tbody>
+                    <tr class="table-active"><td colspan="4"><input name="display" value="" id="display" disabled></td></tr>
+                    <div class="main">
+                        <tr>
+                            <td><input name="seven" type="button" value="7" id="key" onclick="calculator.display.value += '7'"></td>
+                            <td><input name="eight" type="button" value="8" id="key" onclick="calculator.display.value += '8'"></td>
+                            <td><input name="nine" type="button" value="9" id="key" onclick="calculator.display.value += '9'"></td>
+                            <td><input name="divide" type="button" value="/" id="key" onclick="calculator.display.value += '/'"></td>
+                        </tr>
+                        <tr>
+                            <td><input name="four" type="button" value="4" id="key" onclick="calculator.display.value += '4'"></td>
+                            <td><input name="five" type="button" value="5" id="key" onclick="calculator.display.value += '5'"></td>
+                            <td><input name="six" type="button" value="6" id="key" onclick="calculator.display.value += '6'"></td>
+                            <td><input name="multiply" type="button" value="*" id="key" onclick="calculator.display.value += '*'"></td>
+                        </tr>
+                        <tr>
+                            <td><input name="one" type="button" value="1" id="key" onclick="calculator.display.value += '1'"></td>
+                            <td><input name="two" type="button" value="2" id="key" onclick="calculator.display.value += '2'"></td>
+                            <td><input name="three" type="button" value="3" id="key" onclick="calculator.display.value += '3'"></td>
+                            <td><input name="add" type="button" value="+" id="key" onclick="calculator.display.value += '+'"></td>
+                        </tr>
+                        <tr>
+                            <td><input name="zero" type="button" value="0" id="key" onclick="calculator.display.value += '0'"></td>
+                            <td><input name="decimal" type="button" value="." id="key" onclick="calculator.display.value += '.'"></td>
+                            <td><input name="reminder" type="button" value="%" id="key" onclick="calculator.display.value += '%'"></td>
+                            <td><input name="minus" type="button" value="-" id="key" onclick="calculator.display.value += '-'"></td>
+                        </tr>
+                        <tr><td colspan="4"><input name="equals" type="button" value="=" id="key" class="display" onclick="calculator.display.value = eval(calculator.display.value)"></td></tr>
+                    </div>
+                </tbody>
+            </table>
+        </form>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</body>
+</html>
